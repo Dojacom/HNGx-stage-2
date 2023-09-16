@@ -75,7 +75,7 @@ return(
                 <a href="">See more <img src={Next} alt="seeMore" /></a>
             </div>
             <div className="movies-container">
-            {movieList.map((movie)=>(
+            {movieList.slice(0, 10).map((movie)=>(
             
                 <article key={movie.id} className="movie-card"  data-testid="movie-card">
                     <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}  
