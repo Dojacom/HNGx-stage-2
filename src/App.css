@@ -1,0 +1,318 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  
+}
+.header{
+  background: url(../src/assets/Poster.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.text-logo{
+  font-size: 20px;
+  color: #ffff;
+}
+.container{
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.logo{
+  width: 30px;
+  height: 30px;
+
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.row{
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  margin-top: 3rem;
+  color: #ffff;
+}
+
+.col-1{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.col-1 h2{
+  font-size: 50px;
+}
+.btn-trailer{
+  padding: 10px 15px;
+  width: 150px;
+  border: none;
+  color: white;
+  background: red;
+ border-radius: 10px;
+ cursor: pointer;
+}
+.logo-item{
+  display: flex;
+  column-gap: 3px;
+}
+.searchBox i{
+  position: absolute;
+}
+
+.searchBox  .icon{
+    padding: 10px;
+    color: #fff;
+    min-width: 50px;
+    text-align: center;
+    right: 543px;
+    margin: 8px 0 1px 0;
+}
+.search{
+  padding: 10px 100px;
+  line-height: 20px;
+ 
+  background: transparent;
+  
+
+  border-radius: 8px;
+  border:2px solid #ffffff;
+  color: #D1D5DB;
+}
+.search:focus{
+  outline: none;
+}
+.search::placeholder{
+  text-align: left;
+  color: #535353;
+  opacity: 0.8;
+}
+.small-container{
+  max-width: 100%;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.feature-top{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.john-rating{
+  height: 15px;
+  width: 150px;
+}
+
+/*movies container*/
+.movies-container{
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.movie-card{
+  width: 250px;
+  height: 100%;
+  margin: auto 0;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  
+}
+.movie-info h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.movie-release-date{
+  font-size: 15px;
+}
+.movie-card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}
+.movie-image{
+  width: 100%;
+  height: 300px;
+}
+.feature-top a{
+  color:  rgba(203, 22, 67, 0.7);
+  font-size: 15px;
+  font-weight: 600;
+}
+.feature-top a img{
+  height: 11px;
+}
+article button{
+  width: 30px;
+  height: 29.21px;
+  background: rgba(209, 213, 219, 0.5);
+  border: 0;
+  outline: none;
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  border-radius: 50%;
+}
+article button img:hover{
+  background: rgba(203, 22, 67, 0.7);
+  opacity: 0.8;
+}
+/*.movie-image{
+  width: 310px;
+  height: 460px;
+}*/
+
+
+/*footer*/
+.footer{
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.social-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links fa-brands{
+  font-size: 16px;
+  color: #1f1d1d;
+}
+.footer-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  
+}
+.footer-text a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.copyRight{
+  color: #1f1d1d;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .container{
+    max-width: 100%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .search{
+    padding:10px 20px;
+  }
+  .searchBox  .icon{
+    padding: 10px;
+    color: #fff;
+    min-width: 50px;
+    text-align: center;
+    left: 400px;
+    margin: 8px 0 1px 0;
+}
+.movies-container{
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer-text a{
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  padding: 10px;
+  
+  font-weight: 500;
+}
+.copyRight{
+  color: #1f1d1d;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+}
+@media screen and (max-width: 930px) {
+.movies-container{
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+@media screen and (max-width: 830px) {
+  .movies-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+ .search {
+  padding: 5px 7px;
+ }
+ .searchBox  .icon{
+  padding: 10px;
+  color: #fff;
+  min-width: 50px;
+  text-align: center;
+  left: 300px;
+  top: 8x;
+  margin: 8px 0 1px 0;
+}
+.text-logo{
+  font-size: 16px;
+}
+.header{
+  background: url(../src/assets/Poster.png);
+  background-repeat: no-repeat;
+  background-size: fill;
+  height: 100vh;
+}
+.movies-container{
+  grid-template-columns: repeat(1, 1fr);
+}
+.footer-text a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: 400;
+}
+.copyRight{
+  color: #1f1d1d;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+}
